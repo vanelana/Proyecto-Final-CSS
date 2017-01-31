@@ -56,8 +56,6 @@ header {
  padding-top: 5vh;
  padding-bottom: 5vh;
  display: grid;
- box-shadow: #82c3a6;
- border: 2px;
  }
  footer {
    width: 100%;
@@ -71,6 +69,29 @@ header {
 	.ef6 {
 		padding-bottom: 5vh;
 	}
+
+
+
+							@keyframes slide {
+								0% {
+									margin-top: 150%;
+									}
+								60% {
+									margin-top: -5%;
+									}
+								100% {
+									margin-top: 0%;
+									}
+								}
+								header h1 {
+									-webkit-animation: slide 2s;
+									-moz-animation: slide 2s;
+									-o-animation: slide 2s;
+									animation: slide 2s;
+								}
+
+
+
 }
 @media (min-width: 900px) {
 	.container {
@@ -91,7 +112,6 @@ header {
   .i1 {
 		padding: 2vh;
 		}
-
 
 	.c2 {
 		margin-right: auto;
