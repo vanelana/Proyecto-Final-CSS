@@ -19,7 +19,9 @@ header {
 	 text-shadow: 2px 2px #02010a;
 	 font-size: 30px;
 }
-
+#central {
+	background-color: #d5c75f;
+}
 
 @media (max-width:900px) {
 	.container{
@@ -60,7 +62,15 @@ header {
  footer {
    width: 100%;
   }
-
+	#galeria img {
+		width: 80%;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 5vh;
+	}
+	.ef6 {
+		padding-bottom: 5vh;
+	}
 }
 @media (min-width: 900px) {
 	.container {
@@ -116,12 +126,27 @@ header {
 
   #footer ul {
     display: flex;
-    width: 90%;
+    width: 100%;
   }
   .columna1, .columna2, .columna3, .columna4 {
-    padding-left: 2.5%;
+    padding-left: 0.3%;
     margin-right: auto;
     }
+
+		.ef1,.ef2,.ef3,.ef4,.ef5,.ef6 {
+			width: 30%;
+			padding-top: 1.5%;
+			padding-bottom: 1.5%;
+		}
+		.ef1, .ef4 {
+			padding-left: 2%;
+		}
+		.ef4, .ef6 {
+			padding-right: 2%;
+		}
+		.ef1, .ef2, .ef4, .ef5 {
+			padding-right: 2.5%;
+		}
 }
 
 header a:link, a:visited {
@@ -159,13 +184,17 @@ footer a:link, a:visited {
 	transition-duration: 0.8s;
 }
 
-#imagen04 img{
-	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
-	filter: sepia(90%);
+	.ef1{
+	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
 }
-#imagen08 img{
+	.ef2, .ef4, .ef6{
 	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
 	filter: grayscale(100%);
+}
+.ef3 {
+-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+filter: sepia(90%);
 }
 footer{
   font-family: 'Dancing Script';
